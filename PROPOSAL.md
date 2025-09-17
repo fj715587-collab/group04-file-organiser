@@ -1,0 +1,1 @@
+We will build a File Organiser Utility that scans a selected folder, proposes moves based on file extension categories, performs file moves on confirmation, and supports undoing the last operation. Tools: Python 3.10, pipenv, pytest. UI: minimal CLI or a simple Tkinter preview window if time permits.
