@@ -137,3 +137,16 @@ def undo_last_move(history_dir: Path = Path(HISTORY_DIR_NAME)) -> Tuple[int, Lis
                 continue
 
     return record.get("timestamp", 0), undone
+
+def organize_files(folder: str):
+    """High-level function to organize files in a folder."""
+    from pathlib import Path
+    folder_path = Path(folder)
+
+    # Step 1: Propose moves
+    mapping = propose_moves(folder_path)
+
+    # Step 2: Perform moves
+    undo_file = perform_moves(mapping)
+
+    return undo_file
