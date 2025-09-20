@@ -5,7 +5,7 @@ A Python utility that scans a folder and sorts files into subfolders by file typ
 
 ## Team
 - Coordinator: [Jacob Oluwakemi]
-- Developer: [Umar Farouk,Abdurrahim Ibrahim]
+- Developer: [Abdurrahim Ibrahim]
 - QA / Tests: [Ogah Christopher]
 - Docs / Presenter: [Gaius Nathaniel]
 
