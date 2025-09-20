@@ -9,7 +9,7 @@ A Python utility that scans a folder and sorts files into subfolders by file typ
 - QA / Tests: [Ogah Christopher]
 - Docs / Presenter: [Gaius Nathaniel]
 
-## Demo
-(Will add link to demo video)
+## 🎥 Demo Video 
+https://drive.google.com/file/d/13t3HihXLt5TWUqSFlH6Mf0KZvY-ltaOy/view?usp=drivesdk
 
 
