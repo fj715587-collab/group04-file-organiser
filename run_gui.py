@@ -20,6 +20,16 @@ def choose_folder():
         except Exception as e:
             messagebox.showerror("Error", f"Something went wrong:\n{str(e)}")
 
+def undo_last(root):
+    try:
+        undone = organizer.undo_last_move()
+        if undone:
+            messagebox.showinfo("Undo Success", f"Reverted {len(undone)} moves.", parent=root)
+        else:
+            messagebox.showinfo("Undo", "Nothing to undo.", parent=root)
+    except Exception as e:
+        messagebox.showerror("Undo Failed", str(e), parent=root)
+
 def main():
     root = tk.Tk()
     root.title("File Organizer Utility")
@@ -31,6 +41,9 @@ def main():
     button = tk.Button(root, text="Choose Folder", command=choose_folder, width=20)
     button.pack(pady=10)
 
+    undo_button = tk.Button(root, text="Undo Last", command=lambda: undo_last(root), width=20)
+    undo_button.pack(pady=10)
+
     quit_button = tk.Button(root, text="Quit", command=root.quit, width=20)
     quit_button.pack(pady=10)
 
@@ -38,33 +51,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-def undo_last(root):
-    try:
-        timestamp, undone = organizer.undo_last_move()
-        if undone:
-            messagebox.showinfo("Undo Success", f"Reverted {len(undone)} moves.", parent=root)
-        else:
-            messagebox.showinfo("Undo", "Nothing to undo.", parent=root)
-    except Exception as e:
-        messagebox.showerror("Undo Failed", str(e), parent=root)
-
-def main():
-    root = tk.Tk()
-    root.title("File Organizer Utility")
-    root.geometry("300x200")
-
-    label = tk.Label(root, text="Organize your files by type")
-    label.pack(pady=10)
-
-    button = tk.Button(root, text="Choose Folder", command=choose_folder)
-    button.pack(pady=10)
-
-    undo_button = tk.Button(root, text="Undo Last", command=lambda: undo_last(root))
-    undo_button.pack(pady=10)
-
-    quit_button = tk.Button(root, text="Quit", command=root.quit)
-    quit_button.pack(pady=10)
-
-    root.mainloop()
-
