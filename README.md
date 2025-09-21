@@ -18,20 +18,6 @@ pipenv run python src/gui.py
 Run the test suite with:
 pipenv run pytest
 
-## Project Structure
-.github/
-│   └── workflows/
-│       └── ci.yml
-Pipfile
-Pipfile.lock
-README.md
-.gitignore
-organizer.py
-run.py
-test_core.py
-
-
-
 ## Team
 - Coordinator: [Jacob Oluwakemi]: Scheduling meetings, overall coordination, GitHub repo management.
 - Developer: [Abdurrahim Ibrahim, Gaius Nathaniel]: Wrote main.py for file organization.
