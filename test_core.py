@@ -1,5 +1,5 @@
 import os
-from src.main import scan_directory, propose_moves, perform_moves, undo_last_move
+from organizer import scan_directory, propose_moves, perform_moves, undo_last_move
 
 #imports the functions to test from the main(scan_directory,propose_move, perform_moves, undo_last_move).
 
