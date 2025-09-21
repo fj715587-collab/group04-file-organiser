@@ -12,6 +12,7 @@ This project was created by **Group 4** as part of the Advanced Python Capstone 
 
 Run the CLI:
 pipenv run python src/main.py
+
 Run the GUI:
 pipenv run python src/gui.py
 
