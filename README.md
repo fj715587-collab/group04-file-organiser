@@ -10,6 +10,14 @@ This project was created by **Group 4** as part of the Advanced Python Capstone 
 - Graphical user interface (GUI) with Tkinter.  
 - Automated tests using Pytest.
 
+Run the CLI:
+pipenv run python src/main.py
+Run the GUI:
+pipenv run python src/gui.py
+
+Run the test suite with:
+pipenv run pytest
+
 ## Team
 - Coordinator: [Jacob Oluwakemi]: Scheduling meetings, overall coordination, GitHub repo management.
 - Developer: [Abdurrahim Ibrahim, Gaius Nathaniel]: Wrote main.py for file organization.
@@ -19,6 +27,8 @@ This project was created by **Group 4** as part of the Advanced Python Capstone 
 
 ## 🎥 Demo Video 
 https://drive.google.com/file/d/13t3HihXLt5TWUqSFlH6Mf0KZvY-ltaOy/view?usp=drivesdk
+
+
 
 
 ## Notes
