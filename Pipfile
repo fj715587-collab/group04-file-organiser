@@ -1,12 +1,18 @@
 [[source]]
-name = "pypi"
 url = "https://pypi.org/simple"
 verify_ssl = true
+name = "pypi"
 
 [requires]
 python_version = "3.10"
 
 [packages]
+pytest = "*"
 
 [dev-packages]
-pytest = "*"
+
+[scripts]
+start = "python src/main.py"
+gui = "python src/gui.py"
+test = "pytest"
+
