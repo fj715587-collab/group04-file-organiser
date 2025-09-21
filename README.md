@@ -28,5 +28,4 @@ Testing: Pytest with minimum 2 passing tests
 Version control: GitHub repository with clear commit history
 
 
-Python version used: 3.10+
 
