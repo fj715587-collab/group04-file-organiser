@@ -1,8 +1,7 @@
-# File Organiser Utility (Group 04)
+# (Group 04) File Organiser Utility Project.
 
-The **File Organizer Utility** is a tool that helps users keep their folders clean by automatically sorting files into subfolders based on file type (e.g., `.jpg`, `.mp4`, `.pdf`).  
-
-This project was created by **Group 4** as part of the Advanced Python Capstone Project.  
+We will build a File Organizer Utility that scans a user-selected folder, groups files into categories based on file extensions,
+shows a preview of proposed moves in a confirmation GUI, performs the moves on confirmation, and supports undoing the last operation. We’ll use Python 3.10, pipenv for dependency management, pytest for tests, and Tkinter for a minimal GUI. Developer(s) will implement scanning, preview, move, and undo; QA will write two pytest tests (propose moves, undo). Docs/Presenter will prepare README, demo video, and final report.
 
 ## Features  
 - Organizes files into folders by file extension.  
