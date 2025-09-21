@@ -10,6 +10,7 @@ This project was created by **Group 4** as part of the Advanced Python Capstone 
 - Graphical user interface (GUI) with Tkinter.  
 - Automated tests using Pytest.
 
+## Tests
 Run the CLI:
 pipenv run python src/main.py
 
